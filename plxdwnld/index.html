@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Download original files from the Plex web interface</title>
+	<link rel="stylesheet" href="/plxdwnld/bootstrap.min.css">
+	<link rel="stylesheet" href="/plxdwnld/bootstrap-theme.min.css">
+
+	<style>
+	div.container {
+		padding-bottom: 40px;
+	}
+	</style>
+</head>
+
+<body>
+<div class="container">
+
+	<h1 class="page-header">Download original files from the Plex web interface</h1>
+
+	<p>If you are using Plex, but you are not the owner of a server, the option to download a file is missing from the Plex web interface. This bookmarklet lets you download original files regardless if you are the server owner or not. It's like Direct Stream, but with a save button.</p>
+	<p>This initial version of the bookmarklet has been tested in and works with recent versions of Firefox, Safari and Chrome. It does not work in Internet Explorer at the moment. Edge and Opera browsers have not been tested yet.</p>
+
+	<h2>How to install</h2>
+	<ol>
+		<li>Drag this button to your bookmarks bar:
+		<a href="javascript:(function()%7Bif%20(typeof%20plxDwnld%20%3D%3D%20'undefined')%20%7Bvar%20jsCode%20%3D%20document.createElement('script')%3BjsCode.setAttribute('src'%2C%20'https%3A%2F%2Fpiplongrun.github.io%2Fplxdwnld%2Fbookmarklet.js%3Fts%3D'%20%2B%20Math.floor(Date.now()%2F1000))%3Bdocument.body.appendChild(jsCode)%3B%7D%20else%20%7BplxDwnld.init()%3B%7D%7D)()" class="btn btn-primary btn-sm" role="button" aria-pressed="true">&#x1f4be; PlxDwnld</a></li>
+	</ol>
+
+	<h2>How to use</h2>
+	<ol>
+		<li>Open the Plex web interface and browse to the details page of a media item. The bookmarklet currently works for Movies and TV Shows.</li>
+		<li>Click the bookmark button to get the download.</li>
+	</ol>
+
+	<h2>The code</h2>
+	<p>The code that makes this work: <a href="/plxdwnld/bookmarklet.js">bookmarklet.js</a></p>
+
+	<h2>Screenshot</h2>
+	<img src="/plxdwnld/plexwebscreen.jpg" class="img-responsive" alt="Plex web interface">
+
+</div>
+
+</body>
+</html>
