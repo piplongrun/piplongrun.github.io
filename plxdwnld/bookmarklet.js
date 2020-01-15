@@ -16,7 +16,7 @@
     var apiLibraryUrl = "{baseuri}/library/metadata/{id}?X-Plex-Token={token}";
     var downloadUrl = "{baseuri}{partkey}?download=1&X-Plex-Token={token}";
     var accessTokenXpath = "//Device[@clientIdentifier='{clientid}']/@accessToken";
-    var baseUriXpath = "//Device[@clientIdentifier='{clientid}']/Connection[@local=0]/@uri";
+    var baseUriXpath = "//Device[@clientIdentifier='{clientid}']/Connection[@local='0']/@uri";
     var partKeyXpath = "//Media/Part[1]/@key";
     var baseUri = null;
     var accessToken = null;
