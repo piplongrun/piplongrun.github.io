@@ -76,6 +76,6 @@
     };
 
     return self;
-}());
+})();
 
 plxDwnld.init();
