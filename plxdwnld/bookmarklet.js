@@ -19,7 +19,7 @@ if (typeof plxDwnld === "undefined") {
         const metadataIdRegex = new RegExp("key=%2Flibrary%2Fmetadata%2F(\\d+)");
         const apiResourceUrl = "https://plex.tv/api/resources?includeHttps=1&X-Plex-Token={token}";
         const apiLibraryUrl = "{baseuri}/library/metadata/{id}?X-Plex-Token={token}";
-        const downloadUrl = "{baseuri}{partkey}?download=1&X-Plex-Token={token}";
+        const downloadUrl = "{baseuri}{partkey}?download=0&X-Plex-Token={token}";
         const accessTokenXpath = "//Device[@clientIdentifier='{clientid}']/@accessToken";
         const baseUriXpath = "//Device[@clientIdentifier='{clientid}']/Connection[@local='0']/@uri";
         const partKeyXpath = "//Media/Part[1]/@key";
